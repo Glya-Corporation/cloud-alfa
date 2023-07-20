@@ -13,8 +13,8 @@ const options = {
 
     },
     apis: [
-        "./src/routes/*.routes.js",
-        "./src/models/*.models.js"
+        "./src/routes/*.route.js",
+        "./src/models/*.model.js"
       ],
     
 }
@@ -29,7 +29,7 @@ const swaggerDocs = (app, port) => {
         res.setHeader("Content-Type", "application/json");
         res.send(swaggerSpec)
     });
-    console.log('Documentation available in process.env.HOST/api/v1/docs')
+    console.log(`Documentation available in ${process.env.HOST}:${process.env.PORT}/api/v1/docs`);
 }
 
 module.exports = swaggerDocs

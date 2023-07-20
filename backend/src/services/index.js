@@ -1,5 +1,5 @@
+const UserServices = require('./user.services.js');
+const ProjectServices = require('./project.services.js');
 
-const nameData = require('./');
 
-
-module.exports = { allConsts };
+module.exports = { UserServices, ProjectServices };

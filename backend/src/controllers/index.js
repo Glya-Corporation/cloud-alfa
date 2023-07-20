@@ -1,5 +1,16 @@
+const { createUser, getUser, getAllUser, updateUser, deleteUser } = require('./user.controller.js');
+const { createProject, getProject, getAllProjects, updateProject, deleteProject } = require('./project.controller.js');
 
-const nameData = require('./');
 
-
-module.exports = { allConsts };
+module.exports = {
+  createUser,
+  getUser,
+  getAllUser,
+  updateUser,
+  deleteUser,
+  createProject,
+  getProject,
+  getAllProjects,
+  updateProject,
+  deleteProject
+};
